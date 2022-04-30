@@ -19,8 +19,8 @@ const aboutembed = {
     url: 'https://raw.githubusercontent.com/Alex-Toucan/Food-bot/4b95b8e835d71a58e64a88f0a6b77babd4a1f021/files/avatar.jpeg'
   },
   author: {
-    name: "By Ping For Toast (the dev... NOT the bot lol)",
-    icon_url: 'https://cdn.discordapp.com/avatars/543828521844342790/b3943bb9252490b8179b829976de7893.png?size=128'
+    name: "By AlexToucanYT#0001",
+    icon_url: 'https://raw.githubusercontent.com/Alex-Toucan/Food-bot/4b95b8e835d71a58e64a88f0a6b77babd4a1f021/files/avatar.jpeg'
   },
   fields: [
     {
@@ -64,5 +64,18 @@ client.on('message', msg => {
     msg.reply('hi! if you are a importaint person... you can see a list of all the servers the bot is in by visiting the command prompt!');
   }
 })
+
+client.on('message', msg => {
+  if(msg.content.toLowerCase() == '${prefix}toast') {
+    fetch(`https://source.unsplash.com/1600x900/?toast`).then((response) => {
+      msg.author.send(response.url).then(sentMessage => sentMessage.react('969787192341839883'))
+      console.log("Toast Requested By " + msg.author.tag);
+     });
+    if(msg.content.toLowerCase() == "${prefix}toast")
+    msg.react('969787192341839883')
+     }
+ });
+
+
 
 client.login(config.token);
