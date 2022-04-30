@@ -1,0 +1,34 @@
+Food
+
+-- Fruit --
+Apple
+Banana
+Orange
+Grapefruit
+Lime
+Lemon
+Mangoe
+Peache
+Plum
+Watermelon
+Honeydew
+Avocado
+Tomato
+Dragonfruit
+
+-- Vegetable --
+Lettuce
+Spinach 
+Cabbage
+Cauliflower
+Brussels-sprout
+Broccoli
+Zucchini
+Pumpkin
+Cucumber
+Potato
+Yam
+Asparagus
+Celery 
+Onion
+Garlic
