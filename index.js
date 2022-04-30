@@ -49,23 +49,6 @@ client.on('ready', () => {
  client.user.setActivity('you ask for toast', {type: "WATCHING"})
  });
 
-client.on('message', msg => {
-  if(msg.content.toLowerCase() == 'toast' || msg.content.toLowerCase() == '!!toast' || msg.content == '<@!743109027831218176>') {
-    fetch(`https://source.unsplash.com/1600x900/?toast`).then((response) => {
-      msg.author.send(response.url).then(sentMessage => sentMessage.react('743504813492273183'))
-      console.log("Toast Requested By " + msg.author.tag);
-     });
-    if(msg.content.toLowerCase() == '<@!743109027831218176>') {
-      msg.react('743509805217611898');
-    }
-    if(msg.content.toLowerCase() == "toast" || msg.content.toLowerCase() == "!!toast")
-    msg.react('🇹')
-      .then(() => msg.react('🇴'))
-      .then(() => msg.react('🇦'))
-      .then(() => msg.react('🇸'))
-      .then(() => msg.react('743541134692974704')); // might try and grab the discord emoji and upload it directly to a server for dupe T's. but this is kinda funny tbh.
-    }
- });
 
 client.on('message', msg => {
   if(msg.content.toLowerCase() === '!!about' || msg.content.toLowerCase() === 'about the toast' || msg.content.toLowerCase() === 'toast about') {
@@ -74,18 +57,9 @@ client.on('message', msg => {
  });
 
 client.on('message', msg => {
-  if (msg.content === 'super secret stuff lol') {
+  if (msg.content === 'admincontrol') {
     console.log(client.guilds.cache);
     msg.reply('hi! if you are a importaint person... you can see a list of all the servers the bot is in by visiting the command prompt!');
-  }
-})
-
-client.on('message', msg => {
-  if (msg.content.toLowerCase() == '!!toast noise' || msg.content.toLowerCase() == 'toast noise') {
-    console.log("Toast Noise Requested by " + msg.author.tag + "... ew!");
-    msg.reply('https://raw.githubusercontent.com/Scaledi/useless-toast-bot/master/Files/Toastyyy.mp3' + ' You gross fuck')
-    .then(sentMessage => sentMessage.react('743504813492273183'))
-    .then(() => msg.react('743862090162241567'))
   }
 })
 
