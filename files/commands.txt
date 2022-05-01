@@ -4,31 +4,69 @@ Food
 Apple
 Banana
 Orange
-Grapefruit
 Lime
 Lemon
-Mangoe
-Peache
-Plum
+Mango
+Peach
+Blackberry
+Raspberry
+Blueberry
 Watermelon
-Honeydew
+Melon
 Avocado
 Tomato
-Dragonfruit
+Olive
+Pumpkin
+Beans
 
 -- Vegetable --
 Lettuce
-Spinach 
-Cabbage
-Cauliflower
-Brussels-sprout
 Broccoli
-Zucchini
-Pumpkin
 Cucumber
+Pumpkin
 Potato
-Yam
-Asparagus
-Celery 
 Onion
 Garlic
+Peanuts
+Chestnut
+
+-- Grains --
+Bread
+Croissant
+Baguette
+Flatbread 
+Pretzel
+Pancakes
+Waffles
+Rice
+
+-- Protein --
+Ham
+Chicken
+Steak
+Egg
+
+-- Seafood --
+Oyster
+Shrimp
+Sushi
+
+-- Dairy --
+Milk
+Cheese
+
+-- Fast Food --
+Burger
+Fries
+Pizza
+
+-- Etc. Meals --
+Spaghetti
+Sandwich
+
+-- Drinks --
+Wine
+Beer
+Water
+Milk
+Cocktail
