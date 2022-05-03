@@ -49,7 +49,7 @@ const config = {
 client.on('ready', () => {
  console.log(`Logged in as ${client.user.tag}!`);
  client.user.setActivity('people ask for food.', {type: "WATCHING"})
- });
+});
 
 
 client.on('message', msg => {
@@ -63,7 +63,7 @@ client.on('message', msg => {
     console.log(client.guilds.cache);
     msg.reply('Information posted onto Node.js client.');
   }
-})
+});
 
 client.on('message', msg => {
   if(msg.content.toLowerCase() == `${prefix}toast`) {
