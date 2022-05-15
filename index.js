@@ -25,7 +25,7 @@ const aboutembed = {
     fields: [
         {
             name: "Invite me!",
-            value: "invite me using https://discord.com/oauth2/authorize?client_id=968854386363211796&scope=bot&permissions=67488832"
+            value: "Invite me using https://discord.com/oauth2/authorize?client_id=968854386363211796&scope=bot&permissions=67488832"
         },
         {
             name: "Comments?",
@@ -49,7 +49,7 @@ const config = {
 client.on('ready', () => {
  console.log(`Logged in as ${client.user.tag}!`);
  client.user.setActivity('people ask for food.', {type: "WATCHING"})
-});
+ });
 
 
 client.on('message', msg => {
@@ -59,11 +59,26 @@ client.on('message', msg => {
  });
 
 client.on('message', msg => {
-  if (msg.content === `${prefix}admincontrol`) {
-    console.log(client.guilds.cache);
-    msg.reply('Information posted onto Node.js client.');
+  if (msg.content === `${prefix}guildcache`) {
+      console.log(client.guilds.cache);
+      msg.reply('The guild cache is posted onto Node.js client.');
   }
-});
+})
+
+client.on('message', msg => {
+    if (msg.content === `${prefix}userscache`) {
+        console.log(client.users.cache);
+        msg.reply('The users cache is posted onto Node.js client.');
+    }
+})
+
+client.on('message', msg => {
+    if (msg.content === `${prefix}channelscache`) {
+        console.log(client.channels.cache);
+        msg.reply('The channels cache is posted onto Node.js client.');
+    }
+})
+
 
 client.on('message', msg => {
   if(msg.content.toLowerCase() == `${prefix}toast`) {
@@ -166,7 +181,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
     if (msg.content.toLowerCase() == `${prefix}peach`) {
-        fetch(`https://source.unsplash.com/1600x900/?peach`).then((response) => {
+        fetch(`https://source.unsplash.com/1600x900/?nectarine`).then((response) => {
             msg.reply(response.url)
             console.log("Peach Requested By " + msg.author.tag);
         });
